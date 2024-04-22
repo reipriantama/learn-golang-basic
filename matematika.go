@@ -18,6 +18,9 @@ func main() {
 	i += 5 // sama aja dengan i = i + 5
 	fmt.Println(i)
 
+	c += 20
+	fmt.Println(c)
+
 	// Unary Operator
 	// ++  ---> a = a + 1
 	// -- ---> a = a - 1

@@ -7,7 +7,7 @@ func main() {
 	fmt.Println("Reinato")
 	fmt.Println("Reinato Priantama")
 
-	fmt.Println(len("Rei"))
+	fmt.Println(len("Reinato"))
 	fmt.Println("Reinato"[0])
 	fmt.Println("Reinato Priantama"[1])
 }

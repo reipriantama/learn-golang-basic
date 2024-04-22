@@ -32,7 +32,7 @@ func main() {
 	fmt.Println(values[2])
 
 	fmt.Println(len(values))
-	values[0] = 100
+	values[0] = 100 // mengubah nilai 90 pada array values menjadi 100
 	fmt.Println(values)
 
 }

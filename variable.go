@@ -8,7 +8,8 @@ func main() {
 	// name = "Rei"
 	// fmt.Println(name)
 
-	// ataupun bisa langsung menginisialisasikan data pada variable nya, maka kita tidak wajib menyebutkan tipe data variable nya
+	/* ataupun bisa langsung menginisialisasikan data pada variable nya,
+	maka kita tidak wajib menyebutkan tipe data variable nya */
 
 	// var name = "Reinato"
 	// fmt.Println(name)

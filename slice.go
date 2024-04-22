@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	names := [...]string{"Rei", "Eko", "Kurniawan", "Kari", "Budi", "Nugraha"}
 
-	slice1 := names[4:6]
+	slice1 := names[2:5]
 	fmt.Println(slice1)
 
 	slice2 := names[:3]
@@ -18,6 +18,7 @@ func main() {
 	fmt.Println(slice4)
 
 	days := [...]string{"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"} // ini membuat array
+	fmt.Println(days)
 
 	daySlice1 := days[5:]
 	fmt.Println(daySlice1)
@@ -43,7 +44,7 @@ func main() {
 	fmt.Println(len(newSlice))
 	fmt.Println(cap(newSlice))
 
-	newSlice2 := append(newSlice, "Priantama")
+	newSlice2 := append(newSlice, "Priantama", "Joko", "Bambang", "Joni")
 
 	fmt.Println(newSlice2)
 	fmt.Println(len(newSlice2))
