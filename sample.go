@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"learn-golang-basic/test"
+)
 
-func main() { 
-	fmt.Println("Ini adalah contoh untt function yang sama")
+func main() {
+
+	resultTest := test.TestFunction("Rei")
+	fmt.Println(resultTest)
 }
