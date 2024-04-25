@@ -1,1 +1,8 @@
-package sample
+package main
+
+import "fmt"
+
+func main() {
+
+	fmt.Println("Hello Rei!")
+}

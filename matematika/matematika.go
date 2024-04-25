@@ -10,6 +10,11 @@ func main() {
 	var c = a + b - d*e
 	fmt.Println(c)
 
+	var firstName = "Rei"
+	var lastName = "Priantama"
+	var fullName = firstName + lastName
+	fmt.Println(fullName)
+
 	var i = 10
 
 	i += 10 // sama aja dengan i = i + 10

@@ -8,7 +8,7 @@ func main() {
 	var nilai32 int32 = 2147483647
 	var nilai64 int64 = 9223372036854775807
 
-	var nilaiLebih = 128
+	var nilaiLebih = -129
 	var nilaiBerubah int8 = int8(nilaiLebih)
 
 	fmt.Println(nilai8)

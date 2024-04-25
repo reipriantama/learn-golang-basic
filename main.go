@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
-	resultTest := test.TestFunction("Rei")
-	fmt.Println(resultTest)
+	result := test.TestFunction("Rei")
+	fmt.Println(result)
 }

@@ -14,16 +14,17 @@ func factorialLoop(value int) int {
 
 }
 
-func factorialRecursive(value int) int  {
-	if value == 1{
+func factorialRecursive(value int) int {
+	if value == 1 {
 		return 1
 	} else {
-		return value * factorialRecursive(value - 1)
+		return value * factorialRecursive(value-1)
 	}
 }
 
 func main() {
-	
-	fmt.Println(factorialLoop(5))
+	result := 5 * 4 * 3 * 2 * 1
+	fmt.Println("result :", result)
+	fmt.Println("factorialLoop :", factorialLoop(5))
 	fmt.Println(factorialRecursive(5))
 }

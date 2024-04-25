@@ -8,6 +8,8 @@ func main() {
 	fmt.Println("Reinato Priantama")
 
 	fmt.Println(len("Reinato"))
-	fmt.Println("Reinato"[0])
+	fmt.Println("ReinAto"[4])
 	fmt.Println("Reinato Priantama"[1])
 }
+
+// bilangan ascii

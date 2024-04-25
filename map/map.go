@@ -21,5 +21,6 @@ func main() {
 
 	fmt.Println(len(book))
 	fmt.Println(book["title"])
-
+	delete(book, "ups")
+	fmt.Println(book)
 }

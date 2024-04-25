@@ -17,9 +17,5 @@ func main() {
 	// ketika membuat constant dan tidak digunakan tidak akan error berbeda dengan variable
 	// const tidak bisa mengubah data
 
-	// error
-	// fristName = "Rei"
-	// lastName = "Prian"
-
 	// * constant tidak bisa diubah variable bisa diubah
 }
