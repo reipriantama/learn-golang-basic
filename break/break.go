@@ -1,3 +1,4 @@
+// BREAK
 package main
 
 import "fmt"

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	name := "Rei"
+	name := "Reinato"
 
 	switch name {
 	case "Rei":
@@ -17,11 +17,12 @@ func main() {
 	// short statement switch
 	switch length := len(name); length > 5 {
 	case true:
-		fmt.Println("Nama terlalu panjang")
-	case false:
 		fmt.Println("Nama sudah benar")
+	case false:
+		fmt.Println("Nama tidak sesuai")
 	}
 
+	// switch without condition
 	length := len(name)
 	switch {
 	case length > 10:
@@ -29,6 +30,6 @@ func main() {
 	case length > 5:
 		fmt.Println("Nama Sudah Benar")
 	default:
-		fmt.Println("Nama Tidak Sesuai")
+		fmt.Println("Nama tidak sesuai")
 	}
 }

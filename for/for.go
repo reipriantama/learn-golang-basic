@@ -19,7 +19,7 @@ func main() {
 	// loop
 	names := []string{"Rei", "Eko", "Kurniawan"}
 	for i := 0; i < len(names); i++ {
-		fmt.Println("Contoh loop", names[i])
+		fmt.Println("Contoh loop :", names[i])
 	}
 
 	fmt.Println(names[0])
@@ -34,5 +34,13 @@ func main() {
 	// loop range tanpa index
 	for _, name := range names {
 		fmt.Println("=", name)
+	}
+
+	// --------------------------------------------------------------------- //
+	for i := 0; i < 5; i++ {
+		for j := i; j < 5; j++ {
+			fmt.Print(j, " ")
+		}
+		fmt.Println()
 	}
 }

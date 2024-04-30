@@ -15,7 +15,7 @@ func getFullNameNumber() (firstName, lastName string, firstNumber int, secondNum
 	lastName = "Priantama"
 	firstNumber = 123123
 	secondNumber = 321321
-	return firstName, lastName, firstNumber, secondNumber
+	return
 }
 
 func main() {

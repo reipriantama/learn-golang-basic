@@ -10,8 +10,8 @@ func getNameNumber() (string, int) {
 	return "Reinato", 123123
 }
 
-func getNumber1(name string, number int) (string, int) {
-	return name, number
+func getNumber1(name string, lastName string, number int) (string, string, int) {
+	return name, lastName, number
 
 }
 
@@ -28,5 +28,5 @@ func main() {
 
 	//-------------------------------//
 
-	fmt.Println(getNumber1("Rei "+"Priantama", 230499))
+	fmt.Println(getNumber1("Rei"+"nato", "priantama", 230499))
 }
