@@ -16,6 +16,6 @@ func main() {
 	sayHelloTo("Rei", "Priantama")
 
 	for i := 0; i < 10; i++ {
-		fmt.Println("Perulangan ke-", sayHello(), i)
+		fmt.Println("Perulangan", sayHello(), i)
 	}
 }
