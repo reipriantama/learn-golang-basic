@@ -5,7 +5,6 @@ import "fmt"
 func reverse(n int) int {
 	data := 0
 	for n > 0 {
-		fmt.Println(n)
 		remainder := n % 10
 		data *= 10
 		data += remainder
