@@ -10,11 +10,11 @@ func main() {
 		counter++
 	}
 
-	for counter := 1; counter <= 10; counter++ {
-		fmt.Println("Perulangan sederhana ke", counter)
+	for counter2 := 1; counter <= 20; counter++ {
+		fmt.Println("Perulangan sederhana ke", counter2)
 	}
 
-	fmt.Println("Selesai")
+	fmt.Println(counter)
 
 	// loop
 	names := []string{"Rei", "Eko", "Kurniawan"}
@@ -26,21 +26,4 @@ func main() {
 	fmt.Println(names[1])
 	fmt.Println(names[2])
 
-	// loop range
-	for index, name := range names {
-		fmt.Println("index", index, "=", name)
-	}
-
-	// loop range tanpa index
-	for _, name := range names {
-		fmt.Println("=", name)
-	}
-
-	// --------------------------------------------------------------------- //
-	for i := 0; i < 5; i++ {
-		for j := i; j < 5; j++ {
-			fmt.Print(j, " ")
-		}
-		fmt.Println()
-	}
 }

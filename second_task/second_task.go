@@ -1,48 +1,37 @@
+/* Given an integer array nums, return the third distinct maximum number in
+this array. If the third maximum does not exist, return the maximum number. */
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func thirdMax(nums []int) int {
-    firstMax, secondMax, thirdMax := nums[0], nums[0], nums[0]
-    count := 0
+	firstMax, secondMax, thirdMax := math.MinInt64, math.MinInt64, math.MinInt64
 
-    // Temukan nilai maksimum pertama
-    for _, num := range nums {
-        if num > firstMax {
-            firstMax = num
-        }
-    }
+	for _, num := range nums {
+		if num > firstMax {
+			thirdMax = secondMax
+			secondMax = firstMax
+			firstMax = num
+		} else if num < firstMax && num > secondMax {
+			thirdMax = secondMax
+			secondMax = num
+		} else if num < secondMax && num > thirdMax {
+			thirdMax = num
+		}
+	}
 
-    // Temukan nilai maksimum kedua
-    for _, num := range nums {
-        if num < firstMax && num > secondMax {
-            secondMax = num
-        }
-    }
-
-    // Temukan nilai maksimum ketiga (jika ada)
-    for _, num := range nums {
-        if num < secondMax && num > thirdMax {
-            thirdMax = num
-            count++
-        }
-    }
-
-    // Jika tidak ada nilai maksimum ketiga yang unik, kembalikan nilai maksimum pertama
-    if count < 2 {
-        return firstMax
-    }
-
-    return thirdMax
+	if thirdMax != math.MinInt64 {
+		return thirdMax
+	}
+	return firstMax
 }
 
 func main() {
-    nums1 := []int{3, 2, 1}
-    fmt.Println("Output 1:", thirdMax(nums1)) 
 
-    nums2 := []int{1, 2}
-    fmt.Println("Output 2:", thirdMax(nums2)) 
-
-    nums3 := []int{2, 2, 3, 1}
-    fmt.Println("Output 3:", thirdMax(nums3)) 
+	nums3 := []int{9, 5, 7, 4, 2}
+	fmt.Println("Output 3:", thirdMax(nums3))
 }

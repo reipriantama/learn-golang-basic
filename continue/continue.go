@@ -1,4 +1,3 @@
-// CONTINUE
 package main
 
 import "fmt"

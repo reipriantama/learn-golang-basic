@@ -7,7 +7,7 @@ func logging() {
 }
 
 func runApplication() {
-	defer logging()
+	defer logging() // akan dijalankan setelah function dijalankan(akan berada di akhir function)
 	fmt.Println("Run Application")
 
 }

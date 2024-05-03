@@ -25,6 +25,8 @@ func main() {
 	// mengambil hanya satu return value
 	firstName, _ = getFullName()
 	fmt.Println(firstName)
+	_, _ = getFullName()
+	fmt.Println(firstName)
 
 	//-------------------------------//
 
