@@ -5,13 +5,17 @@ import (
 	"learn-golang-basic/test"
 )
 
+func sayHello(name string) string {
+	return "Hello " + name
+}
+
 func main() {
 	result := test.TestFunction("Rei")
 	fmt.Println(result)
 
-	fmt.Println("John Wick")
-	fmt.Println("John", "Wick")
+	fmt.Println(sayHello("Rei"))
 
-	fmt.Print("John Wick \n")
-	fmt.Print("John", "Wick \n")
 }
+
+// unexported => hanya bisa digunakan pada package yang sama
+// exported => bisa digunakan di package yang berbeda

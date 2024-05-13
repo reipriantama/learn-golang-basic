@@ -26,4 +26,12 @@ func main() {
 	fmt.Println(names[1])
 	fmt.Println(names[2])
 
+	for index, name := range names {
+		fmt.Println("index", index, "=", name)
+	}
+
+	for _, name := range names {
+		fmt.Println("=", name)
+	}
+
 }
