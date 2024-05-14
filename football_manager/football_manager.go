@@ -4,14 +4,14 @@ import (
 	"fmt"
 )
 
-// Player represents a football player
+// Struct untuk player
 type Player struct {
 	Name     string
 	Age      int
 	Position string
 }
 
-// Team represents a football team
+// Struct untuk team
 type Team struct {
 	Name        string
 	Country     string
@@ -19,13 +19,13 @@ type Team struct {
 	Players     []Player
 }
 
-// AddPlayer adds a player to the team
+// Menambahkan player ke dalam team
 func (t *Team) AddPlayer(player Player) {
 	t.Players = append(t.Players, player)
 	fmt.Println("Player added successfully.")
 }
 
-// UpdatePlayer updates information of a player in the team
+// Update player informasi di team
 func (t *Team) UpdatePlayer(player Player) {
 	for i, p := range t.Players {
 		if p.Name == player.Name {
@@ -37,7 +37,7 @@ func (t *Team) UpdatePlayer(player Player) {
 	fmt.Println("Player not found.")
 }
 
-// DeletePlayer removes a player from the team
+// menghapus player dari team
 func (t *Team) DeletePlayer(name string) {
 	for i, p := range t.Players {
 		if p.Name == name {
@@ -49,7 +49,7 @@ func (t *Team) DeletePlayer(name string) {
 	fmt.Println("Player not found.")
 }
 
-// ViewTeam displays information about the team and its players
+// menampilkan informasi terkait player dan team
 func (t *Team) ViewTeam() {
 	fmt.Printf("Team Name: %s\n", t.Name)
 	fmt.Printf("Country: %s\n", t.Country)
@@ -63,7 +63,7 @@ func (t *Team) ViewTeam() {
 func main() {
 	var teamName, country, managerName string
 
-	// Input team name, country, and manager name
+	// Input team name, country, dan manager name
 	fmt.Println("Enter team name:")
 	fmt.Scanln(&teamName)
 	fmt.Println("Enter country:")
@@ -71,7 +71,7 @@ func main() {
 	fmt.Println("Enter manager name:")
 	fmt.Scanln(&managerName)
 
-	// Create a new team
+	// Membuat team
 	team := Team{Name: teamName, Country: country, ManagerName: managerName}
 
 	// Add players to the team

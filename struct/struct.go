@@ -50,6 +50,7 @@ func main() {
 	fmt.Println(rei.Name)
 	fmt.Println(rei.Adress)
 	fmt.Println(rei.Age)
+
 	rei.sayHello("Agus")
 
 	joko := Customer{
