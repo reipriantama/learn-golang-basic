@@ -13,4 +13,14 @@ func main() {
 	var kosong any = Ups()
 	fmt.Println(kosong)
 
+	var secret interface{}
+
+	secret = "ethan hunt"
+	fmt.Println(secret)
+
+	secret = 1234
+	fmt.Println(secret)
+
+	secret = 12.4
+	fmt.Println(secret)
 }

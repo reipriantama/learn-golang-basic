@@ -16,12 +16,21 @@ func main() {
 	fmt.Println(duration3)
 	fmt.Println(duration4)
 
-	start := time.Now()
+	fmt.Println("start ")
+	time.Sleep(4 * time.Second)
+	fmt.Println("after 4 seconds")
 
-	time.Sleep(3 * time.Second)
+	count := 0
 
-	duration := time.Since(start)
+	for {
+		fmt.Println("Hello")
+		count++
 
-	fmt.Println("Waktu akan muncul dalam hitungan detik:", duration.Seconds())
+		if count == 5 {
+			break
+		}
+
+		time.Sleep(1 * time.Second)
+	}
 
 }

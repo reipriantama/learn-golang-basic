@@ -13,6 +13,7 @@ func runApp(error bool) {
 	if error {
 		panic("ERROR")
 	}
+
 	/* jika memanggil recover setelah error, recover akan berhenti
 	karena tidak akan tereksekusi, harus berada di dalam defer
 	*/

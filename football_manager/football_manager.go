@@ -21,15 +21,15 @@ type Team struct {
 
 // Menambahkan player ke dalam team
 func (t *Team) AddPlayer(player Player) {
-	t.Players = append(t.Players, player)
+	t.Players = append(t.Players, player) // menambahkan player ke slice Players
 	fmt.Println("Player added successfully.")
 }
 
 // Update player informasi di team
 func (t *Team) UpdatePlayer(player Player) {
 	for i, p := range t.Players {
-		if p.Name == player.Name {
-			t.Players[i] = player
+		if p.Name == player.Name { // mengecek apakah nama player ada di team
+			t.Players[i] = player // mengupdate informasi player
 			fmt.Println("Player updated successfully.")
 			return
 		}
@@ -40,8 +40,8 @@ func (t *Team) UpdatePlayer(player Player) {
 // menghapus player dari team
 func (t *Team) DeletePlayer(name string) {
 	for i, p := range t.Players {
-		if p.Name == name {
-			t.Players = append(t.Players[:i], t.Players[i+1:]...)
+		if p.Name == name { // mengecek nama pemain pada p.Name sama dengan name yang diberikan
+			t.Players = append(t.Players[:i], t.Players[i+1:]...) // menghapus player
 			fmt.Println("Player deleted successfully.")
 			return
 		}
@@ -74,7 +74,7 @@ func main() {
 	// Membuat team
 	team := Team{Name: teamName, Country: country, ManagerName: managerName}
 
-	// Add players to the team
+	// Menambahkan player ke dalam team
 	fmt.Println("Add players to the team (press Enter after each player, type 'done' when finished):")
 	for {
 		var playerName, position string
@@ -134,7 +134,7 @@ func main() {
 			fmt.Println("\nTeam Information:")
 			team.ViewTeam()
 		case "5":
-			fmt.Println("Exiting...")
+			fmt.Println("Exit...")
 			return
 		default:
 			fmt.Println("Invalid choice. Please try again.")
