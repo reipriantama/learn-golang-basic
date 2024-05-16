@@ -11,6 +11,8 @@ type Player struct {
 	Position string
 }
 
+// Menampilkan informasi terkait player
+
 // Struct untuk team
 type Team struct {
 	Name        string
